@@ -3,140 +3,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>Raiyan Ghasura | Portfolio</title>
+  <meta name="description" content="Portfolio of Raiyan Ghasura – BCA Student & Website Designer from India" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    * {margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
-    body {background:#0f0f0f;color:#fff;display:flex;justify-content:center;padding:40px;}
-    .container {width:100%;max-width:900px;display:flex;flex-direction:column;gap:20px;}
-    .card {background:#1a1a1a;padding:22px;border-radius:18px;box-shadow:0 0 4px #000;}
-    .row {display:flex;gap:20px;width:100%;}
-    .col {flex:1;}
-    .avatar {width:120px;border-radius:20px;}
-    .flex {display:flex;align-items:center;gap:15px;}
-    .tag {background:#222;padding:5px 14px;border-radius:12px;font-size:14px;}
-    h2 {font-size:20px;margin-bottom:10px;}
-    ul {margin-top:10px;margin-left:18px;line-height:1.6;font-size:14px;}
-    .icons img {height:28px;margin-right:8px;}
-    .footer-icons img {height:28px;margin-right:18px;}
+    /* Custom accent animation for originality */
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .float { animation: float 4s ease-in-out infinite; }
   </style>
 </head>
-<body>
-  <div class="container">
+<body class="bg-slate-950 text-slate-100 selection:bg-indigo-500 selection:text-white">
 
-    <!-- TOP SECTION -->
-    <div class="row card">
-      <img src="avatar1.jpeg" class="avatar">
-      <div>
-        <p style="font-size:15px; line-height:1.55;">
-          My name is <b>Raiyan Ghasura,a passionate BCA student and a dedicated website designer from India.
-I am very passionate about my work and always eager to learn and grow in the field of technology, gaming, and creative development.</b>
- </p>
-        <div class="flex" style="margin-top:15px;">
-          <div class="tag">🎮 Gaming</div>
-          <div class="tag">✈️ Traveling</div>
+  <!-- Header -->
+  <header class="max-w-6xl mx-auto px-6 py-8 flex items-center justify-between">
+    <h1 class="text-2xl font-bold tracking-wide">Raiyan<span class="text-indigo-400">.</span></h1>
+    <nav class="hidden md:flex gap-8 text-sm">
+      <a href="#about" class="hover:text-indigo-400">About</a>
+      <a href="#skills" class="hover:text-indigo-400">Skills</a>
+      <a href="#projects" class="hover:text-indigo-400">Projects</a>
+      <a href="#contact" class="hover:text-indigo-400">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="text-indigo-400 mb-3">Hello, I'm</p>
+      <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">Raiyan Ghasura</h2>
+      <p class="mt-4 text-slate-300 max-w-xl">
+        A passionate <strong>BCA student</strong> and <strong>Website Designer</strong> from India. 
+        I love creating clean, modern, and user‑friendly websites with original ideas.
+      </p>
+      <div class="mt-8 flex gap-4">
+        <a href="#projects" class="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-xl text-sm shadow-lg">View Work</a>
+        <a href="#contact" class="border border-slate-700 hover:border-indigo-400 px-6 py-3 rounded-xl text-sm">Contact Me</a>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <div class="w-64 h-64 rounded-3xl bg-gradient-to-br from-indigo-500/30 to-purple-500/30 flex items-center justify-center float">
+        <span class="text-6xl">💻</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-16">
+    <h3 class="text-3xl font-bold mb-6">About Me</h3>
+    <p class="text-slate-300 max-w-3xl leading-relaxed">
+      I am a BCA student who is very passionate about technology and creative design. 
+      I enjoy learning new tools, experimenting with layouts, and building websites from scratch. 
+      Even as a beginner, I focus on writing clean code and delivering unique designs instead of copying others.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-slate-900/40">
+    <div class="max-w-6xl mx-auto px-6 py-16">
+      <h3 class="text-3xl font-bold mb-10">Skills & Interests</h3>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-400 transition">
+          <h4 class="font-semibold mb-2">Web Design</h4>
+          <p class="text-sm text-slate-400">HTML, CSS, responsive layouts, modern UI.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-400 transition">
+          <h4 class="font-semibold mb-2">Programming</h4>
+          <p class="text-sm text-slate-400">Basics of coding, logic building, learning daily.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-400 transition">
+          <h4 class="font-semibold mb-2">Interests</h4>
+          <p class="text-sm text-slate-400">Gaming, Travelling, Coding.</p>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- DESIGN TOOLS -->
-    <div class="row">
-      <div class="card col">
-        <h2>Design Tools</h2>
-        <div class="icons">
-          <img src="Photoshop1.png"><img src="Canva1.png"><img src="Visual1.png"><img src="Figma1.png">
-        </div>
+  <!-- Projects -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
+    <h3 class="text-3xl font-bold mb-10">Projects</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+        <h4 class="font-semibold mb-2">Student Portfolio Website</h4>
+        <p class="text-sm text-slate-400">A clean and responsive portfolio website built using HTML and CSS.</p>
       </div>
-
-  <div class="card col">
-  <h2>EDUCATION : HIGH SCHOOL
-    <span style="float:right;font-size:14px;opacity:0.7;"> — </span>
-  </h2>
-
-  <p>
-    <br>
-    <span style="font-weight:600;">Sardar Patel School,
-    Deesa, BK, Gujarat, India</span>
-  </p>
-</div>
-
-    </div>
-
-    <!-- EDITING TOOLS + EDUCATION 2 -->
-    <div class="row">
-      <div class="card col">
-        <h2>Editing Tools</h2>
-        <div class="icons">
-          <img src="Adobe1.png"><img src="Final1.png"><img src="Capcut1.png">
-        </div>
-      </div>
-
-      <div class="card col">
-        <h2>Intrests :
-<span style="float:right;font-size:14px;opacity:0.7;"> — </span></h2>
-       <p style="font-weight:600;">
-       Gaming, Travelling, Coding</p>
-
+      <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+        <h4 class="font-semibold mb-2">Notes Web App (Learning Project)</h4>
+        <p class="text-sm text-slate-400">A simple website where users can type and save notes.</p>
       </div>
     </div>
+  </section>
 
-    <!-- LANGUAGES + EDUCATION 3 -->
-    <div class="row">
-      <div class="card col">
-        <h2>Languages :</h2>
-        <div class="languages-text">
-  <strong>English</strong>, <strong>Gujarati</strong>, <strong>Hindi</strong>
-</div>
+  <!-- Contact -->
+  <section id="contact" class="bg-slate-900/40">
+    <div class="max-w-6xl mx-auto px-6 py-16">
+      <h3 class="text-3xl font-bold mb-6">Contact / Save Your Data</h3>
+      <p class="text-slate-300 mb-8">Fill the form below. Data will be saved safely in browser (local storage).</p>
 
+      <form id="contactForm" class="max-w-md grid gap-4">
+        <input type="text" id="name" placeholder="Your Name" required
+          class="px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 focus:border-indigo-400 outline-none" />
+        <input type="email" id="email" placeholder="Your Email" required
+          class="px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 focus:border-indigo-400 outline-none" />
+        <textarea id="message" rows="4" placeholder="Your Message" required
+          class="px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 focus:border-indigo-400 outline-none"></textarea>
+        <button type="submit"
+          class="bg-indigo-500 hover:bg-indigo-600 px-6 py-3 rounded-xl text-sm text-white">Save Data</button>
+      </form>
 
-
-      </div>
-
-      <div class="card col">
-  <h2>Graduation :
-    <span style="float:right;font-size:14px;opacity:0.7;"> — </span>
-  </h2>
-
-  <p style="font-weight:600;">
-    BCA Degree<br>
-    HNGU Patan, Gujarat<br>
-    India
-  </p>
-</div>
-
+      <p id="status" class="mt-4 text-sm text-green-400 hidden">Data saved successfully ✔</p>
     </div>
+  </section>
 
-    <!-- SOCIAL LINKS -->
-    <div class="card">
-      <h2>Portfolio</h2>
-      <div class="footer-icons">
-        <a href="https://instagram.com/raiyan_ghasura" target="_blank">
-  <img src="instagram1.png" alt="Instagram">
-</a>
-<a href="https://snapchat.com/t/1cSMxfjE" target="_blank">
-  <img src="snapchat1.png" alt="Snapchat">
-</a>
-<a href="https://telegram.com/raiyan_ghasura" target="_blank">
-  <img src="telegram1.png" alt="telegram">
-</a>
-<a href="https://Gmail.com/raiyanhere26@gmail.com" target="_blank">
-  <img src="gmail1.png" alt="Gmail">
-</a>
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm text-slate-500">
+    © 2025 Raiyan Ghasura. All rights reserved.
+  </footer>
 
-        </a>
-      </div>
-    </div>
+<script>
+  const form = document.getElementById('contactForm');
+  const statusText = document.getElementById('status');
 
-    <!-- DETAILS -->
-    <div class="card">
-      <div class="flex">
-        <div class="tag">19 years</div>
-        <div class="tag">raiyanhere26@gmail.com</div>
-        <div class="tag">+91 9157502740</div>
-        <div class="tag">🇮🇳 India</div>
-      </div>
-    </div>
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
 
-  </div>
+    const data = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value,
+      time: new Date().toLocaleString()
+    };
+
+    let savedData = JSON.parse(localStorage.getItem('portfolioContacts')) || [];
+    savedData.push(data);
+    localStorage.setItem('portfolioContacts', JSON.stringify(savedData));
+
+    form.reset();
+    statusText.classList.remove('hidden');
+
+    setTimeout(() => statusText.classList.add('hidden'), 3000);
+  });
+</script>
 </body>
 </html>
-
